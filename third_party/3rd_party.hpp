@@ -1,19 +1,22 @@
 #pragma once
 
-// absl libs
+// Include absl libs
 #include "absl/strings/str_replace.h"
 #include "absl/strings/str_join.h"
 
-// indicator libs (only available in unix)
+// Include indicator libs (only available on unix)
 #ifdef unix
 #include "indicators/progress_bar.hpp"
 #endif
 
-// json libs
-#include <nlohmann/json.hpp>
+// Include gtest libs
+#include "gtest/gtest.h"
+
+// Include json libs
+#include "nlohmann/json.hpp"
 using json = nlohmann::json;
 
-// std libs
+// Include std libs
 #include <vector>
 #include <array>
 #include <utility>

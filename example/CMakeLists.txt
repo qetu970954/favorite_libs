@@ -1,2 +1,2 @@
-add_executable(abseil_string abseil_string.cpp)
-target_link_libraries(abseil_string absl::strings)
+add_executable(example main.cpp)
+target_link_libraries(example 3rd)

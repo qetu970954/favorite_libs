@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "absl/strings/str_join.h"
+#include "3rd.hpp"
 
 int main() {
   using namespace std;

@@ -9,7 +9,7 @@ add_subdirectory(json)
 # Add google test support
 add_subdirectory(googletest)
 
-# Build all libraries into a single one
+# Build all libraries into a single header
 add_library(3rd 3rd_party.hpp)
 target_include_directories(3rd PUBLIC abseil-cpp indicators/include)
 target_link_libraries(3rd absl::strings nlohmann_json::nlohmann_json gtest_main)

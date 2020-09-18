@@ -1,9 +1,14 @@
-cmake_minimum_required(VERSION 3.16)
-project(favorite_lib)
-
+cmake_minimum_required(VERSION 3.15)
+project(3rd_party)
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(${PROJECT_SOURCE_DIR}/third_party)
+# Seperating libraries and executables in different directory
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# Include 3rd hardware
 add_subdirectory(third_party)
-add_executable(main main.cpp)
-target_link_libraries(main 3rd)
+
+# Include src_cpp
+add_subdirectory(src_cpp)

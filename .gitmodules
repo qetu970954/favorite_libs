@@ -14,3 +14,7 @@
 	path = third_party/json
 	url = https://github.com/nlohmann/json.git
 	branch = develop
+[submodule "third_party/spdlog"]
+	path = third_party/spdlog
+	url = https://github.com/gabime/spdlog.git
+	branch = v1.x

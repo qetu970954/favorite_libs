@@ -7,7 +7,11 @@
 // Include indicator libs (only available on unix)
 #ifdef unix
 #include "indicators/progress_bar.hpp"
+#include <indicators/cursor_control.hpp>
 #endif
+
+// Include spdlog
+#include "spdlog/spdlog.h"
 
 // Include gtest libs
 #include "gtest/gtest.h"
@@ -26,6 +30,7 @@ using json = nlohmann::json;
 #include <string>
 #include <utility>
 #include <vector>
+
 using std::cerr;
 using std::cout;
 using std::list;

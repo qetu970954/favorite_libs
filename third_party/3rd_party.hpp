@@ -17,8 +17,7 @@
 #include "gtest/gtest.h"
 
 // Include json libs
-#include "nlohmann/json.hpp"
-using json = nlohmann::json;
+#include "simdjson.h"
 
 // Include std libs
 #include <algorithm>

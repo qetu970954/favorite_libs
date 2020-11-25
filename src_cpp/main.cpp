@@ -29,8 +29,9 @@ void JsonHelloWorld() {
   using namespace simdjson;
   dom::parser parser;
   string line;
+  cout << absl::StrCat("Input a json string ...>");
   getline(std::cin, line);
-  dom::element doc = parser.load(line);  // load and parse a file
+  dom::element doc = parser.parse(line);  // load and parse a file
 }
 
 void SpdlogExample() {

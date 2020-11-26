@@ -1,6 +1,6 @@
 #include "3rd_party.hpp"
 
-/*
+
 void basic_progress_bar() {
   using namespace indicators;
 
@@ -23,7 +23,6 @@ void basic_progress_bar() {
     std::this_thread::sleep_for(std::chrono::milliseconds(20));
   }
 }
-*/
 
 void JsonHelloWorld() {
   using namespace simdjson;
@@ -51,7 +50,7 @@ void SpdlogExample() {
 
 int main() {
   cout << absl::StrCat("Hello ", 2020, " World\n");
-  // basic_progress_bar();
+  basic_progress_bar();
   JsonHelloWorld();
   SpdlogExample();
   return 0;

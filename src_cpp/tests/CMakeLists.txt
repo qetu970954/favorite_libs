@@ -1,3 +1,3 @@
-add_executable(test test_sample.cc)
-target_include_directories(test PRIVATE ${PROJECT_SOURCE_DIR}/third_party)
-target_link_libraries(test 3rd)
+add_executable(cpput test_sample.cc) # CPP unittest
+target_include_directories(cpput PRIVATE ${PROJECT_SOURCE_DIR}/third_party)
+target_link_libraries(cpput 3rd)

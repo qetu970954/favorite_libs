@@ -16,4 +16,4 @@ add_subdirectory(spdlog)
 # Build all libraries into a single header
 add_library(3rd 3rd_party.hpp)
 target_include_directories(3rd PUBLIC abseil-cpp indicators/include)
-target_link_libraries(3rd absl::strings simdjson gtest_main gtest spdlog::spdlog_header_only)
+target_link_libraries(3rd absl::strings simdjson spdlog::spdlog_header_only gtest_main gtest )
